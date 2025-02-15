@@ -1,0 +1,278 @@
+/* MainNavigation styles */
+.navContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 22px;
+  gap: 25px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: opacity 0.2s;
+  cursor: pointer;
+  color: #787486;
+}
+
+.navItem:hover {
+  opacity: 0.8;
+}
+
+.navItemSelected {
+  color: #0D062D;
+}
+
+.navIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.navLabel {
+  font-size: 16px;
+  font-weight: 500;
+}
+/* SidebarHeader styles */
+.sidebarHeaderContainer {
+  display: flex;
+  align-items: center;
+  padding: 32px 46px;
+}
+
+.sidebarHeaderLogo {
+  display: flex;
+  align-items: center;
+}
+
+.sidebarHeaderLogoIcon {
+  width: 24px;
+  height: 24px;
+  color: #5030E5;
+}
+
+.sidebarHeaderTitle {
+  margin-left: 9px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #0D062D;
+}
+
+.sidebarHeaderControls {
+  margin-left: 46px;
+  display: flex;
+}
+
+.sidebarHeaderCollapseButton {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #787486;
+  transition: color 0.2s;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.sidebarHeaderCollapseButton:hover,
+.sidebarHeaderCollapseButton:focus {
+  color: #0D062D;
+  outline: none;
+}
+
+.sidebarHeaderCollapseButtonSecond {
+  margin-left: -14px;
+}
+/* ThoughtsWidget styles */
+.thoughtsContainer {
+  padding: 0 22px;
+  margin-bottom: 31px;
+  margin-top: auto;
+}
+
+.thoughtsWidget {
+  position: relative;
+  background-color: #F5F5F5;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.thoughtsIconContainer {
+  position: absolute;
+  top: -33px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.thoughtsIcon {
+  width: 66px;
+  height: 66px;
+}
+
+.thoughtsContent {
+  padding: 70px 33px 33px;
+  text-align: center;
+}
+
+.thoughtsTitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.thoughtsDescription {
+  font-size: 12px;
+  color: #787486;
+  margin-bottom: 14px;
+}
+
+.thoughtsButton {
+  width: 100%;
+  background-color: white;
+  border-radius: 4px;
+  padding: 12px 0;
+  text-align: center;
+  transition: background-color 150ms;
+}
+
+.thoughtsButton:hover {
+  background-color: #f9f9f9;
+}
+
+.thoughtsButton:active {
+  background-color: #f0f0f0;
+}
+
+.thoughtsButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(80, 48, 229, 0.5);
+}
+
+.thoughtsButtonText {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+}
+.projectItemContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 150ms;
+}
+
+.projectItemContainer:hover {
+  background-color: rgba(80, 48, 229, 0.04);
+}
+
+.projectItemSelected {
+  background-color: rgba(80, 48, 229, 0.08);
+}
+
+.projectItemColorDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.projectItemName {
+  font-size: 16px;
+  flex-grow: 1;
+  font-weight: 500;
+  color: #787486;
+}
+
+.projectItemNameSelected {
+  font-weight: 600;
+  color: #0D062D;
+}
+
+.projectItemOptionsButton {
+  font-size: 16px;
+  font-weight: 800;
+  color: #0D062D;
+  transition: opacity 150ms;
+}
+
+.projectItemOptionsButton:hover {
+  opacity: 0.7;
+}
+/* ProjectsList styles */
+.projectsListContainer {
+  padding: 0 22px;
+  margin-top: 30px;
+}
+
+.projectsListHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.projectsListTitle {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #787486;
+}
+
+.projectsListAddButton {
+  padding: 4px;
+  border-radius: 6px;
+  transition: background-color 150ms;
+}
+
+.projectsListAddButton:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.projectsListAddIcon {
+  width: 16px;
+  height: 16px;
+  color: #787486;
+}
+
+.projectsListGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* Sidebar specific styles */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #DBDBDB;
+  background-color: white;
+  min-width: 250px;
+  max-width: 300px;
+  width: 275px;
+}
+
+.sidebarDivider {
+  margin: 30px 22px 0;
+  border-top: 1px solid #DBDBDB;
+}
+
+.thoughtsWidgetContainer {
+  margin-top: auto;
+}
+
+/* Global interactive elements within sidebar */
+.sidebarInteractive {
+  transition: opacity 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.sidebarInteractive:hover {
+  opacity: 0.8;
+}
+
+/* Note: The rest of the shared styles for SidebarHeader, MainNavigation, 
+   ProjectsList, ProjectItem, and ThoughtsWidget would be appended here */

@@ -1,0 +1,567 @@
+/* UserProfile Component */
+.userProfileButton {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background-color 150ms;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.userProfileButton:hover {
+  background-color: #f9fafb;
+}
+
+.userProfileButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #e6f0ff;
+}
+
+.userProfileInfo {
+  text-align: right;
+}
+
+.userProfileName {
+  font-size: 16px;
+  color: #0D062D;
+  font-weight: 500;
+}
+
+.userProfileLocation {
+  font-size: 14px;
+  color: #787486;
+}
+
+.userProfileAvatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.userProfileDropdown {
+  width: 18px;
+  height: 18px;
+  color: #292D32;
+}
+/* ProjectHeader styles */
+.projectHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectHeaderTitle {
+  font-size: 46px;
+  font-weight: 500;
+  color: #0D062D;
+}
+
+.projectHeaderActions {
+  display: flex;
+  gap: 19px;
+}
+
+.projectHeaderButton {
+  padding: 6px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.projectHeaderButton:hover {
+  background-color: rgba(80, 48, 229, 0.08);
+}
+
+.projectHeaderIcon {
+  width: 30px;
+  height: 30px;
+  color: #5030E5;
+}
+/* TaskCard styles */
+.taskCard {
+  width: 100%;
+  text-align: left;
+  background-color: white;
+  border-radius: 16px;
+  padding: 20px;
+  transition: transform 0.2s;
+}
+
+.taskCard:hover,
+.taskCard:focus {
+  transform: scale(1.02);
+}
+
+.taskCard:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(80, 48, 229, 0.5);
+}
+
+.taskCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.taskCardPriority {
+  border-radius: 4px;
+  padding: 4px 6px;
+}
+
+.taskCardPriorityLow {
+  background-color: rgba(223, 168, 116, 0.2);
+}
+
+.taskCardPriorityLowText {
+  color: #D58D49;
+}
+
+.taskCardPriorityHigh {
+  background-color: rgba(216, 114, 125, 0.1);
+}
+
+.taskCardPriorityHighText {
+  color: #D8727D;
+}
+
+.taskCardPriorityCompleted {
+  background-color: rgba(131, 194, 157, 0.2);
+}
+
+.taskCardPriorityCompletedText {
+  color: #68B266;
+}
+
+.taskCardPriority span {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.taskCardOptions {
+  font-size: 16px;
+  font-weight: 800;
+  color: #0D062D;
+  transition: opacity 0.2s;
+}
+
+.taskCardOptions:hover {
+  opacity: 0.7;
+}
+
+.taskCardTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0D062D;
+  margin-bottom: 6px;
+}
+
+.taskCardDescription {
+  font-size: 12px;
+  color: #787486;
+  margin-bottom: 28px;
+}
+
+.taskCardImage {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 28px;
+  object-fit: cover;
+}
+
+.taskCardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taskCardAssignees {
+  display: flex;
+  margin-right: -8px;
+}
+
+.taskCardAvatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-right: -8px;
+}
+
+.taskCardMetadata {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #787486;
+}
+
+.taskCardMetadataItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.taskCardIcon {
+  width: 16px;
+  height: 16px;
+  color: #787486;
+}
+/* BoardToolbar styles */
+.boardToolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 41px;
+}
+
+.boardToolbarFilters {
+  display: flex;
+  gap: 12px;
+}
+
+.boardToolbarFilterGroup {
+  position: relative;
+}
+
+.boardToolbarFilterButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #787486;
+  border-radius: 6px;
+  padding: 12px 16px;
+  transition: background-color 0.2s;
+}
+
+.boardToolbarFilterButton:hover {
+  background-color: #f9fafb;
+}
+
+.boardToolbarIcon {
+  width: 16px;
+  height: 16px;
+  color: #787486;
+}
+
+.boardToolbarDropdownIcon {
+  width: 18px;
+  height: 18px;
+  color: #787486;
+  margin-left: 10px;
+}
+
+.boardToolbarFilterText {
+  font-size: 16px;
+  font-weight: 500;
+  color: #787486;
+}
+
+.boardToolbarDropdownMenu {
+  position: absolute;
+  z-index: 10;
+  margin-top: 8px;
+  width: 192px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.boardToolbarDropdownItem {
+  width: 100%;
+  text-align: left;
+  padding: 8px 16px;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.boardToolbarDropdownItem:hover {
+  background-color: #f9fafb;
+}
+
+.boardToolbarControls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.boardToolbarShareButton {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #787486;
+  border-radius: 6px;
+  padding: 12px 16px;
+  transition: background-color 0.2s;
+}
+
+.boardToolbarShareButton:hover {
+  background-color: #f9fafb;
+}
+
+.boardToolbarShareText {
+  font-size: 16px;
+  font-weight: 500;
+  color: #787486;
+}
+
+.boardToolbarDivider {
+  width: 1px;
+  height: 28px;
+  background-color: #787486;
+}
+
+.boardToolbarViewControls {
+  display: flex;
+  gap: 22px;
+}
+
+.boardToolbarViewButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+  background-color: #f3f4f6;
+}
+
+.boardToolbarViewButton:hover {
+  background-color: #e5e7eb;
+}
+
+.boardToolbarViewButtonActive {
+  background-color: #5030E5;
+}
+
+.boardToolbarViewIcon {
+  width: 20px;
+  height: 20px;
+  color: #787486;
+}
+
+.boardToolbarViewButtonActive .boardToolbarViewIcon {
+  color: white;
+}
+
+.boardToolbarOptionsButton {
+  transition: color 0.2s;
+}
+
+.boardToolbarOptionsButton:hover {
+  color: #5030E5;
+}
+
+.boardToolbarOptionsIcon {
+  width: 21px;
+  height: 21px;
+  color: #787486;
+}
+/* HeaderTools styles */
+.headerToolsContainer {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.headerToolsButton {
+  color: #787486;
+  transition: opacity 0.2s;
+}
+
+.headerToolsButton:hover {
+  opacity: 0.7;
+}
+
+.headerToolsIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.headerToolsProfile {
+  margin-left: 1.5rem;
+}
+/* KanbanColumn styles */
+.kanbanColumn {
+  flex: 1;
+  background-color: #F5F5F5;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.kanbanColumnHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.kanbanColumnTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.kanbanColumnDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.kanbanColumnName {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0D062D;
+}
+
+.kanbanColumnCount {
+  background-color: #E0E0E0;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kanbanColumnCount span {
+  font-size: 12px;
+  font-weight: 500;
+  color: #625F6D;
+}
+
+.kanbanColumnBorder {
+  border-top-width: 3px;
+  margin-bottom: 28px;
+}
+
+.kanbanColumnTasks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.kanbanColumnAddTask {
+  width: 100%;
+  border: 1px dashed #5030E5;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.kanbanColumnAddTask:hover {
+  background-color: rgba(80, 48, 229, 0.08);
+}
+
+.kanbanColumnAddTaskIcon {
+  width: 24px;
+  height: 24px;
+  color: #5030E5;
+}
+/* DashboardHeader specific styles */
+.dashboardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 48px;
+  border-bottom: 1px solid #DBDBDB;
+}
+
+.searchContainer {
+  position: relative;
+  flex: 1;
+  max-width: 417px;
+}
+
+.searchLabel {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.searchInputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #F5F5F5;
+  border-radius: 6px;
+  height: 44px;
+  transition: background-color 0.2s;
+}
+
+.searchInputWrapper:hover,
+.searchInputWrapper:focus-within {
+  background-color: #EFEFEF;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 17px;
+  width: 22px;
+  height: 22px;
+  color: #787486;
+}
+
+.searchInput {
+  width: 100%;
+  height: 100%;
+  padding-left: 48px;
+  padding-right: 16px;
+  background: transparent;
+  font-size: 14px;
+  color: #787486;
+  outline: none;
+}
+
+.searchInput::placeholder {
+  color: #787486;
+}
+/* ... existing styles ... */
+
+.kanbanBoard {
+  display: flex;
+  gap: 15px;
+}
+/* ProjectBoard specific styles */
+.projectBoardContainer {
+  flex: 1;
+  padding: 49px;
+  overflow: auto;
+}
+
+.projectBoardHeader {
+  margin-bottom: 40px;
+}
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboardHeader {
+  transition: background-color 0.2s;
+}
+
+.dashboardHeader:hover {
+  background-color: #f9fafb;
+}
+
+.projectBoard {
+  flex: 1;
+}
