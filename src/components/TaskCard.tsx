@@ -37,7 +37,7 @@ const TaskCard: FC<TaskCardProps> = ({
   };
 
   return (
-    <button
+    <div
       onClick={() => onTaskClick(task.id)}
       className={styles.taskCard}
     >
@@ -102,7 +102,7 @@ const TaskCard: FC<TaskCardProps> = ({
           </div>
         </div>
       </div>
-    </button>
+    </div>
   );
 };
 
