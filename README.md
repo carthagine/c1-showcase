@@ -72,6 +72,9 @@ This code has had a `<button>` invocation in `TaskCard.tsx` replaced with
 `<div>`, as the previous code didn't work with Next.js server-side rendering. (No
 other change has been made compared to the code generated in the video.)
 
+Also, see [the comparison with an o1 zero-shot
+approach](o1-comparison/README.md).
+
 ## How to use the AI?
 
 Please apply to join the closed beta at https://carthagine.ai. Our capacity is

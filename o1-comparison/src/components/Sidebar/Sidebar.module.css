@@ -1,0 +1,127 @@
+.sidebar {
+  width: 280px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #eaeaea;
+  padding: 1.5rem 1rem;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  width: 24px;
+  height: 24px;
+  background: #a59ffd;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.logoText {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.nav a {
+  display: flex;
+  align-items: center;
+  color: #888;
+  font-size: 0.95rem;
+  font-weight: 500;
+  gap: 0.5rem;
+  transition: color 0.2s;
+}
+
+.nav a:hover {
+  color: #000;
+}
+
+.projects {
+  margin-bottom: 2rem;
+}
+
+.projects h3 {
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.projects ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.projects li {
+  color: #777;
+  cursor: pointer;
+}
+
+.projects .active {
+  font-weight: 600;
+  color: #000;
+}
+
+.thoughtsCard {
+  padding: 1rem;
+  background: #fdfdfd;
+  border: 1px solid #f2f2f2;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.lightBulb {
+  width: 32px;
+  height: 32px;
+  background: #fff9d6;
+  border-radius: 50%;
+  margin: 0 auto 0.5rem auto;
+  position: relative;
+}
+
+.lightBulb::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #ffea8a;
+  border-radius: 50%;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.thoughtsCard h4 {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.thoughtsCard p {
+  font-size: 0.8rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.thoughtsCard button {
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 500;
+}

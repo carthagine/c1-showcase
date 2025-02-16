@@ -1,0 +1,6 @@
+.board {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  margin-bottom: 2rem;
+}

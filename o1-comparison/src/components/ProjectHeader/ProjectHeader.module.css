@@ -1,0 +1,125 @@
+.projectHeader {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titleRow h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-right: 1rem;
+}
+
+.iconRow {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.3rem;
+  color: #777;
+}
+
+.controlsRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.buttons button {
+  background: #f5f5f5;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.shareSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.shareSection button {
+  background: #7265fd;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.shareSection button:hover {
+  opacity: 0.9;
+}
+
+.avatars {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.avatars img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  position: relative;
+  margin-left: -8px;
+}
+
+  .avatars img:first-of-type {
+    margin-left: 0;
+  }
+
+.avatarMore {
+  background: #eee;
+  color: #555;
+  font-size: 0.8rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -8px;
+}
+
+.shareBtn {
+  background: #f3f2f7;
+  color: #6f6f7a;
+  margin-left: 1rem;
+}
+
+.viewToggle {
+  display: flex;
+  gap: 0.4rem;
+  margin-left: 0.5rem;
+}
+
+.grid, .list {
+  width: 24px;
+  height: 24px;
+  background: #f3f2f7;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.grid:hover,
+.list:hover {
+  background: #dfdef5;
+}
